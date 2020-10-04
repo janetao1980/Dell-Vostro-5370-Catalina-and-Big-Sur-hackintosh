@@ -1,0 +1,37 @@
+Vendor: AMI
+========================================
+CFG Lock: 0x527
+   Disabled        0x0            
+   Enabled         0x1 (default)  
+========================================
+1 items found, 1 valid
+
+Vendor: AMI
+========================================
+DVMT Pre-Allocated: 0x7E8
+   0M              0x0            
+   32M             0x1 (default)  
+   64M             0x2            
+   4M              0xF0           
+   8M              0xF1           
+   12M             0xF2           
+   16M             0xF3           
+   20M             0xF4           
+   24M             0xF5           
+   28M             0xF6           
+   32M/F7          0xF7           
+   36M             0xF8           
+   40M             0xF9           
+   44M             0xFA           
+   48M             0xFB           
+   52M             0xFC           
+   56M             0xFD           
+   60M             0xFE           
+========================================
+DVMT Total Gfx Mem: 0x7E9
+   256M            0x2 (default)  
+   128M            0x1            
+   MAX             0x3            
+========================================
+2 items found, 2 valid
+
