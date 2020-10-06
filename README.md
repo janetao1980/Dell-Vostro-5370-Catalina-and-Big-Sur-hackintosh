@@ -31,7 +31,7 @@
 | **支持原生亮度快捷键**         | ✅ 正常工作      | 支持16档亮度调节            
 | **支持fn+insert睡眠**         | ✅ 正常工作      | 外接显示器时，此组合键关闭内置显示器，无外接显示器按此组合键就睡眠          
 | **AMD GPU**                 | ❌ 已屏蔽| 由于AMD 530在Apple Mac下无法工作。因此，它完全被禁用以节省功率。                                                                                                                |
-| **SK hynix SSD**            | ❌ 工作异常 for Big Sur OS                          | U盘升级Big Sur系统，即使使用NVMeFix [NVMeFix](https://github.com/acidanthera/NVMeFix)在进入磁盘工具界面也不能识别出来，为了更好的体验Mac系统，只需将其替换为受支持的NVMe驱动器即可。                                                     |
+| **SK hynix SSD**            | ❌ 工作异常 for Big Sur OS                          | U盘升级Big Sur系统，即使使用[NVMeFix](https://github.com/acidanthera/NVMeFix)在进入磁盘工具界面也不能识别出来，为了更好的体验Mac系统，只需将其替换为受支持的NVMe驱动器即可。                                                     |
 | **指纹识别器**                 | ❌ BIOS下关闭即可   |可能永远无法使用，因为只能使用Windows专有的Goodix驱动程序。禁用以节省功率。                                                                                                                                              |
 
 ## ⬇️ 指南阅读
@@ -81,6 +81,7 @@
 默认情况下，音频可能有问题。使用耳机时，一段时间后音频会随机停止。有时拔出并重新插入耳机是可行的，但这很烦人并且不可靠。要永久解决此问题，您必须通过运行从文件夹安装ComboJack。安装ComboJack实现耳机耳麦切换，改进电流声。
 （修复耳机接口）在这里下载由Heporis制作的[ComboJack](https://github.com/randomprofilename/ComboJack)。
 ![Screenshot](img/ComboJack.png)
+
 终端运行以下路径的脚本
 `ComboJack_Installer / install.sh`
 
@@ -111,7 +112,6 @@ Catalina：[下载地址](https : //github.com/xzhih/one-key-hidpi)
 第三步选择手动输入分辨率
 分辨率输入的是1600x1066 1343x895 2160x1440,如下图所示：
 ![Screenshot](img/HIDPI.png)
-
 最后说一句，开启了hidpi之后，在设置→显示器里不要让分辨率超过1343x895，最大只能到这个，因为超过这个会引发一些唤醒后屏幕显示的问题（例如唤醒后屏幕只显示到四分之三），而且不要觉得这个分辨率小，因为这个是hipdi分辨率，跟你理解的分辨率不一样，1343×895实际上等于你理解的一般分辨率的2686×1790，是超过2k的。
 
 ### 🔋 睡眠管理-sleepwatcher
@@ -190,4 +190,5 @@ REG ADD HKLM \ S YSTEM \ C urrentControlSet \ C ONTROL \ t imeZoneInformation / 
 - [RehabMan](https://github.com/RehabMan)提供了许多笔记本电脑[热补丁](https://github.com/RehabMan/OS-X-Clover-Laptop-Config/tree/master/hotpatch)和指南
 - [knnspeed](https://www.tonymacx86.com/threads/guide-dell-xps-15-9560-4k-touch-1tb-ssd-32gb-ram-100-adobergb.224486)提供ComboJack，解释清楚的热补丁和有效的USB-C热插拔解决方案
 - [zxystd](https://github.com/OpenIntelWireless)提供的[WIFI](https://github.com/OpenIntelWireless/itlwm/releases),[Bluetooth](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases/tag/1.1.2),[HeliPort](https://github.com/OpenIntelWireless/HeliPort)
+- [宪武大佬](https://github.com/daliansky/OC-little)提供的fn+insert功能组合键修改。
 - 参与Hackintosh开发的其他所有人
